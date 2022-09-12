@@ -1,0 +1,119 @@
+@forward 'globals';
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: min(100%, 350px);
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 20px 20px 5 var(--dark-blue);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 20px 20px 5 var(--dark-blue);
+}
+
+.hero {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+
+    &__img {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    text-align: center;
+
+    &__header {
+        font-size: 1.2rem;
+        font-weight: var(--weight1);
+    }
+
+    &__para {
+        min-width: 6ch;
+        color: hsl(0, 0%, 46%);
+        font-weight: var(--weight3);
+        line-height: 1.5;
+    }
+
+    &__split {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin-bottom: 15px;
+
+        a {
+            text-decoration: underline;
+            color: var(--bright-blue);
+            font-size: .9rem;
+        }
+    }
+
+    &__btn {
+        width: 90%;
+        padding: 8px;
+        background-color: var(--bright-blue);
+        color: #fff;
+        margin: 8px;
+        border-radius: 7px;
+        font-weight: var(--weight2);
+        box-shadow: 20px 20px 2 var(--dark-blue);
+
+        &:hover, &:focus {
+            opacity: .8;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: hsl(0, 0%, 46%);
+
+        &:hover, &:focus {
+            opacity: .8;
+        }
+    }
+}
+
+.plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+
+    p {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.link {
+    &:hover, &:focus {
+        opacity: .8;
+    }
+}
+
